@@ -1,0 +1,282 @@
+/* basic styles */
+html {
+	font-size: 16px;
+	scroll-padding-top: 50px;
+	scroll-behavior: smooth
+}
+body {
+	margin: 0; 
+	box-sizing: border-box; 
+	background: #F4F3EE;
+	overflow-x: hidden;
+	color: #122C34; 
+}
+main {
+	width: 800px;
+	margin: 50px auto;
+
+
+}
+#meta {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	padding: 10px 0;
+	border-top: 2px solid #122C34;
+}
+nav {
+	text-align: right;
+	align-self: end;
+}
+header {
+	border-top: 2px solid #122C34;
+	padding: 10px 0 10px;
+}
+#syllabus, #schedule, #projects, #exercises, #students, .project {
+	border-top: 2px solid #122C34;
+	padding-bottom: 25px;
+}
+footer {
+	margin-top: 50px;
+}
+hr {
+	border: none;
+	border-bottom: 2px solid #373737;
+}
+mark {
+	background-color: #FB62F6;
+	padding: 0 2px;
+}
+/* list styles */
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+section ul li, section ol li {
+	margin: 5px 0;
+	font-size: 1rem;
+}
+.arrow, .number {
+	padding: 0;
+}
+.number {
+	padding-left: 27px;
+}
+.arrow li:before {
+	content: "\2192";
+	margin-right: 5px;
+	color: #FB62F6;
+}
+.boxes li:before {
+	content: "\2610";
+	margin-right: 5px;
+	color: #FB62F6;
+}
+.reqs {
+	display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.reqs li {
+	margin: 5px 0 0;
+}
+
+#students {
+	display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+#students h2 {
+	grid-column: 1 / span 2;
+}
+#students h4 {
+	margin-top: 0;
+}
+
+
+/* type styles */
+
+body {
+	font-size: 24px;
+	font-family: "area-normal", sans-serif;
+	font-weight: 400;
+}
+h1	{
+	font-size: 1rem;
+	line-height: .8em;
+	font-weight: 900;
+	font-style: normal;
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+h2	{
+	font-size: 5.653rem;
+	line-height: 1;
+	font-weight: 700;
+	font-style: normal;
+	margin: 50px 0 50px 0;
+	padding: 0;
+	text-transform: capitalize;
+}
+.project h2 {
+	margin: 0;
+}
+h3	{
+	font-size: 1.25rem;
+	font-weight: 900;
+	font-style: normal;
+	margin: 25px 0 0;
+	padding: 0;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+#exercises h3:last-of-type {
+	margin-bottom: 10px;
+}
+h4	{
+	font-size: 1rem;
+	font-weight: 900;
+	font-style: normal;
+	margin: 15px 0 0;
+}
+h5 {
+	font-size: .8rem;
+	font-weight: 900;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin: 50px 0 0;
+}
+p, ul, ol, li	{
+	font-size: 1em;
+}
+p, blockquote {
+	line-height: 1.5;
+	margin: 5px 0 10px;
+	font-size: 1rem;
+}
+blockquote {
+	font-style: italic;
+	padding: 0 50px;
+	color: #FB62F6;
+}
+nav ul {
+	text-transform: uppercase;
+	letter-spacing: .5px;
+	font-weight: 700;
+}
+small, .small {
+	font-size: 0.5em;
+}
+strong {
+	font-weight: 900;
+}
+/* link styles */
+a {
+	color: #48A9A6;
+}
+a:hover {
+	color: #FF4242;
+}
+h1 a, h1 a:link, h1 a:hover, h1 a:active, h1 a:visited {
+	color: #122C34;
+	text-decoration: none;
+}
+
+/*list styles*/
+
+.temp-thanks h1, .temp-thanks h2 {
+  color: #373737;
+  text-align: center;
+}
+.temp-thanks h2 {
+  font-size: 1.5em;
+}
+#random-list {
+  padding-top: 25px;
+}
+#random-list a, #random-list a:visited, #random-list a:active {
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 3px solid #373737;
+  padding: 5px 10px 5px;
+  transition: .5s all ease;
+}
+#random-list a:hover {
+  cursor: pointer;
+  background-color: #373737;
+  color: #FFFDED;
+}
+#generate {
+  text-align: center;
+  margin: 25px 0;
+}
+#random-list ol {
+  margin: 0 auto;
+  padding: 0;
+  list-style-type: none;
+  width: 220px;
+}
+#random-list li {
+  font-size: 1.2em;
+  margin: 0;
+  padding: 5px 0;
+  float: none;
+}
+@media only screen and (max-width: 1050px) {
+	main {
+		width: 600px;
+		margin: 50px auto;
+	}
+	.number {
+		padding-left: 22px;
+	}
+}
+@media only screen and (max-width: 650px) {
+	main {
+		width: calc(100vw - 50px);
+		margin: 25px;
+	}
+	.number {
+		padding-left: 18px;
+	}
+	#meta {
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+	nav {
+		text-align: left;
+		align-self: start;
+		border-top: 2px solid #122C34;
+		padding: 10px 0 0;
+		margin-top: 10px;
+	}
+	nav ul {
+		display: flex;
+		flex-wrap: wrap;
+  justify-content: space-between;
+	}
+	.reqs, #students {
+		display: grid;
+	  grid-template-columns: 1fr;
+	}
+	.reqs li {
+		margin: 5px 0 0;
+	}
+	#students h2 {
+		grid-column: initial;
+	}
+	#students h4 {
+		margin-top: 15px;
+	}
+	h2 {
+		font-size: 3.2rem;
+	}
+}
+@media screen and (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
