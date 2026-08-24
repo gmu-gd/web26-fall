@@ -31,7 +31,7 @@ function shuffle(array) {
 }
 
 function randomList(){
-  var students = ["Jules", "Anna", "Finn", "Claire", "Rayna", "Sung-Ho", "Patrick", "Jenn", "Jess", "Paul", "Alice", "Emily", "Isha", "CeCe", "Valerie", "Brendan"];
+  var students = ["ashley" ,"camila" ,"dana" ,"emma" ,"gyara" ,"ira" ,"jess" ,"jinan" ,"lance" ,"michael" ,"nicole" ,"norman" ,"quinn" ,"rayna" ,"sade" ,"uzziah" ,"winnie" ,"zeynep"];
   var y;
   $('#generate').click( function(){
     $('ol').empty()
@@ -42,3 +42,4 @@ function randomList(){
     };
   });
 }
+
