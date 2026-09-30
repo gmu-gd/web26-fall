@@ -41,5 +41,9 @@ function randomList(){
       $('#list').append(html);
     };
   });
+  $('#list').on('click', 'li', function() {
+    $(this).remove();
+  });
 }
+
 
