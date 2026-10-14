@@ -52,10 +52,12 @@ ul {
 	margin: 0;
 	padding: 0;
 }
-
 section ul li, section ol li {
 	margin: 5px 0;
 	font-size: 1rem;
+}
+section.project ul li, section.project ol li {
+	line-height: 1.4rem;
 }
 .arrow, .number {
 	padding: 0;
